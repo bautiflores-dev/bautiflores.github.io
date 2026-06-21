@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional</title>
+    <style>
+        /* Estilos Globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #1e293b, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Contenedor Principal */
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: #1e293b;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 6px;
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            color: #475569;
+            font-size: 1.05rem;
+        }
+
+        /* Bloques de Proyectos / Experiencia */
+        .project-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            font-weight: 700;
+            color: #1e293b;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 1.1rem;
+        }
+
+        .project-tech {
+            color: #3b82f6;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        /* Etiquetas de Tecnologías */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .tag {
+            background-color: #eff6ff;
+            color: #2563eb;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #dbeafe;
+        }
+
+        /* Enlaces y Contacto */
+        .links-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.2s ease;
+        }
+
+        .btn-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            main {
+                padding: 25px 20px;
+            }
+            header h1 {
+                font-size: 1.9rem;
+            }
+            .project-title {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 1. Nombre, Apellido y Foto -->
+        <header>
+            <img src="https://i.ibb.co/Df44DHFg/Screenshot-20260210-150501.jpg" alt="Screenshot 20260210 150501" border="0" class="profile-img">
+            <h1>Bautista Tomas Flores Maldonado</h1>
+            <p>Estudiante Programacion FullStack</p>
+        </header>
+
+        <main>
+            
+            <section>
+                <h2>Presentación Profesional</h2>
+                <p>Tengo 18 años, estoy haciendo una Tecnicatura en Programacion FullStack.
+                    Considero que soy una persona responsable, que siempre esta dispuesta a aprender y mejorar en distintos ambitos, tambien con la capacidad de adaptarse facilmente con el entorno que me rodea.
+                Estoy abierto a nuevas experiencias. Siempre busco desempeñarme de la mejor forma posible utilizando todas mis capacidades para conseguir los mejores resultados en el trabajo.
+                    
+                </p>
+            </section>
+
+            <!-- 3. Tecnologías, herramientas o áreas de interés -->
+            <section>
+                <h2>Tecnologías y Áreas de Interés</h2>
+                <div class="tags-container">
+                    <!-- Modifica o añade las etiquetas que correspondan a tu perfil -->
+                    <span class="tag">HTML5 & CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">Bases de Datos</span>
+                    <span class="tag">Desarrollo Web</span>
+                    <span class="tag">Resolución de Problemas</span>
+                </div>
+            </section>
+
+            <!-- 4. Proyectos, trabajos prácticos o experiencias relevantes -->
+            <section>
+                <h2>Proyectos y Experiencia Relevante</h2>
+
+                <!-- Proyecto 2 -->
+                <div class="project-item">
+                    <div class="project-title">
+                        <span>Experiencia Laboral o Proyecto Educativo</span>
+                        <span>[Año]</span>
+                    </div>
+                    <div class="project-tech">Área: Desarrollo / Gestión / Soporte</div>
+                    <p>Realizacion de paginas web y aplicaciones sencillas</p>
+                </div>
+            </section>
+
+            <!-- 5, 6 y 7. Links a GitHub, LinkedIn y Medio de contacto -->
+            <section>
+                <h2>Contacto y Redes</h2>
+                <p>Puedes conocer más de mi trabajo o ponerte en contacto conmigo a través de los siguientes enlaces:</p>
+                
+                <div class="links-container">
+                    <!-- Link a GitHub -->
+                    <a href="https://github.com/bautiflores-dev" target="_blank" class="btn-link">💻 GitHub</a>
+                    
+                    <!-- Link a LinkedIn -->
+                    <a href="https://www.linkedin.com/in/bautista-flores-733028401/" target="_blank" class="btn-link">💼 LinkedIn</a>
+                    
+                    <!-- Medio de contacto profesional -->
+                    <a href="mailto:bauti98flores@gmail.com" class="btn-link">📧 bauti98flores@gmail.com</a>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>
